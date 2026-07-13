@@ -1,0 +1,261 @@
+:root {
+  --azul: #0a2647;
+  --azul-profundo: #071f3b;
+  --acento: #165a8f;
+  --verde: #7ed957;
+  --blanco: #ffffff;
+  --gris-claro: #f6f9fc;
+  --gris-medio: #dbe5ef;
+  --gris-texto: #637083;
+  --texto: #152033;
+  --aviso: #fff4db;
+  --radio: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--texto);
+  background: var(--blanco);
+  font-family: "DM Sans", Arial, sans-serif;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--azul);
+  font-family: "Sora", Arial, sans-serif;
+  line-height: 1.16;
+  letter-spacing: 0;
+}
+
+a {
+  color: var(--acento);
+  font-weight: 800;
+}
+
+:focus-visible {
+  outline: 3px solid rgba(126, 217, 87, 0.88);
+  outline-offset: 3px;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--azul);
+}
+
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  gap: 18px;
+}
+
+.navbar__logo,
+.navbar__back {
+  color: var(--blanco);
+  text-decoration: none;
+}
+
+.navbar__logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Sora", Arial, sans-serif;
+  font-weight: 800;
+}
+
+.navbar__logo img {
+  width: 142px;
+  height: auto;
+  max-height: 36px;
+  object-fit: contain;
+}
+
+.navbar__logo span {
+  color: var(--verde);
+}
+
+.navbar__back {
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 0.9rem;
+}
+
+.navbar__back:hover {
+  color: var(--verde);
+}
+
+.hero-legal {
+  border-bottom: 4px solid var(--verde);
+  background: var(--azul);
+  padding: 54px 0 46px;
+}
+
+.hero-legal__inner,
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.hero-legal__tag {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--verde);
+  font-family: "Sora", Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.hero-legal h1 {
+  color: var(--blanco);
+  font-size: 2.25rem;
+  margin-bottom: 10px;
+}
+
+.hero-legal__meta {
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 0.92rem;
+}
+
+.content {
+  padding-top: 58px;
+  padding-bottom: 78px;
+}
+
+.notice {
+  border: 1px solid var(--gris-medio);
+  border-left: 5px solid var(--acento);
+  border-radius: var(--radio);
+  background: var(--gris-claro);
+  padding: 22px;
+  margin-bottom: 42px;
+}
+
+.notice--legal {
+  border-left-color: #995c00;
+  background: var(--aviso);
+}
+
+.notice p {
+  color: var(--gris-texto);
+}
+
+.notice strong {
+  color: var(--texto);
+}
+
+.section {
+  margin-bottom: 38px;
+}
+
+.section h2 {
+  border-bottom: 1px solid var(--gris-medio);
+  font-size: 1.14rem;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.section p,
+.section li,
+.cookie-table td {
+  color: var(--gris-texto);
+  font-size: 0.98rem;
+  margin-bottom: 10px;
+}
+
+.section ul {
+  padding-left: 20px;
+}
+
+.cookie-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0 4px;
+  overflow: hidden;
+  border: 1px solid var(--gris-medio);
+  border-radius: var(--radio);
+}
+
+.cookie-table th {
+  background: var(--azul);
+  color: var(--blanco);
+  font-family: "Sora", Arial, sans-serif;
+  font-size: 0.86rem;
+  padding: 12px;
+  text-align: left;
+}
+
+.cookie-table td {
+  border-top: 1px solid var(--gris-medio);
+  padding: 12px;
+  vertical-align: top;
+}
+
+.footer-legal {
+  background: var(--azul-profundo);
+  padding: 26px 24px;
+  text-align: center;
+}
+
+.footer-legal p,
+.footer-legal a {
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 0.9rem;
+}
+
+.footer-legal a:hover {
+  color: var(--verde);
+}
+
+@media (max-width: 620px) {
+  .navbar__inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hero-legal h1 {
+    font-size: 1.86rem;
+  }
+
+  .cookie-table,
+  .cookie-table thead,
+  .cookie-table tbody,
+  .cookie-table tr,
+  .cookie-table th,
+  .cookie-table td {
+    display: block;
+  }
+
+  .cookie-table th {
+    display: none;
+  }
+
+  .cookie-table td {
+    border-top: 0;
+    border-bottom: 1px solid var(--gris-medio);
+  }
+
+  .cookie-table td::before {
+    content: attr(data-label);
+    display: block;
+    color: var(--azul);
+    font-family: "Sora", Arial, sans-serif;
+    font-size: 0.82rem;
+    font-weight: 800;
+    margin-bottom: 4px;
+  }
+}

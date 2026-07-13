@@ -1,0 +1,17 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dependencias o builds locales si se usan en el futuro
+node_modules/
+dist/
+build/
+.vercel/
+
+# Logs y capturas temporales de validación
+*.log
+__*.png
+
+# Carpeta vacía creada por error antes de mover el repo a la raíz
+/WEB-OPTIMA-CANALES/
