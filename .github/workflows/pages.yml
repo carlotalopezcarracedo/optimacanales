@@ -33,10 +33,18 @@ jobs:
         env:
           SITE_URL: ${{ vars.SITE_URL }}
 
+      - name: Prepare static artifact
+        shell: bash
+        run: |
+          mkdir -p _site
+          cp .nojekyll 404.html aviso-legal.html cookies.html index.html legal.css privacidad.html robots.txt site-config.js site-legal.js sitemap.xml _site/
+          cp -R public _site/public
+          if [ -f CNAME ]; then cp CNAME _site/CNAME; fi
+
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
       - name: Deploy to GitHub Pages
         id: deployment

@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated during deployment by scripts/generate-seo.mjs when SITE_URL is configured. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/</loc>
+    <loc>https://carlotalopezcarracedo.github.io/optimacanales/</loc>
+    <lastmod>2026-07-13</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>/privacidad.html</loc>
+    <loc>https://carlotalopezcarracedo.github.io/optimacanales/privacidad.html</loc>
+    <lastmod>2026-07-13</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>/aviso-legal.html</loc>
+    <loc>https://carlotalopezcarracedo.github.io/optimacanales/aviso-legal.html</loc>
+    <lastmod>2026-07-13</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>/cookies.html</loc>
+    <loc>https://carlotalopezcarracedo.github.io/optimacanales/cookies.html</loc>
+    <lastmod>2026-07-13</lastmod>
     <priority>0.5</priority>
   </url>
 </urlset>

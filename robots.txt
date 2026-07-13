@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: /sitemap.xml
+Sitemap: https://carlotalopezcarracedo.github.io/optimacanales/sitemap.xml
