@@ -32,10 +32,21 @@ function githubPagesFallback() {
 }
 
 const siteUrl = normalizeSiteUrl(configuredSiteUrl || githubPagesFallback());
-const routes = ["/", "/privacidad.html", "/aviso-legal.html", "/cookies.html"];
+const routes = [
+  "/",
+  "/colaboradores-energeticos.html",
+  "/canal-energia-inmobiliarias.html",
+  "/canal-energia-administradores-fincas.html",
+  "/privacidad.html",
+  "/aviso-legal.html",
+  "/cookies.html",
+];
 const today = new Date().toISOString().slice(0, 10);
 const htmlRoutes = new Map([
   ["index.html", "/"],
+  ["colaboradores-energeticos.html", "/colaboradores-energeticos.html"],
+  ["canal-energia-inmobiliarias.html", "/canal-energia-inmobiliarias.html"],
+  ["canal-energia-administradores-fincas.html", "/canal-energia-administradores-fincas.html"],
   ["privacidad.html", "/privacidad.html"],
   ["aviso-legal.html", "/aviso-legal.html"],
   ["cookies.html", "/cookies.html"],
@@ -78,7 +89,7 @@ Sitemap: ${siteUrl}/sitemap.xml
 const sitemapItems = routes
   .map((route) => {
     const loc = absoluteUrl(route);
-    const priority = route === "/" ? "1.0" : "0.5";
+    const priority = route === "/" ? "1.0" : route.includes("canal-") || route.includes("colaboradores-") ? "0.8" : "0.3";
     return `  <url>
     <loc>${loc}</loc>
     <lastmod>${today}</lastmod>
