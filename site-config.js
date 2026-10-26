@@ -6,15 +6,15 @@
     contactEmail: "info@optimamercado.com",
     privacyEmail: "info@optimamercado.com",
     b2cSiteUrl: "https://optimamercado.com",
-    siteUrl: "",
+    siteUrl: "https://optimacanales.com",
     applicationEndpoint: "",
     whatsappUrl: "",
     applicationSubject: "Solicitud de valoración como canal energético",
     seo: {
-      title: "Óptima Canales | Canal energético para negocios y comerciales",
+      title: "Canal energético B2B para colaboradores | Óptima Canales",
       description:
-        "Ofrece servicios energéticos a tus clientes con comparativas, tramitación, seguimiento, soporte humano y una estructura profesional detrás.",
-      ogTitle: "Convierte tu relación con clientes en una nueva línea de negocio",
+        "Programa de colaboradores energéticos para negocios y comerciales: comparativas, tramitación, seguimiento y soporte para tu cartera.",
+      ogTitle: "Canal energético B2B para hacer crecer tu cartera",
       ogDescription:
         "Óptima pone la herramienta, las comparativas, la tramitación y el soporte. Tú mantienes la relación con tu cliente.",
     },
